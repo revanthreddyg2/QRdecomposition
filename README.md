@@ -42,9 +42,9 @@ def QR_Decomposition(A):
 
         u[:, i] = A[:, i]
         for j in range(i):
-            u[:, i] -= (A[:, i] @ Q[:, j]) * Q[:, j] # get each u vector
+            u[:, i] -= (A[:, i] @ Q[:, j]) * Q[:, j] 
 
-        Q[:, i] = u[:, i] / np.linalg.norm(u[:, i]) # compute each e vetor
+        Q[:, i] = u[:, i] / np.linalg.norm(u[:, i]) 
 
     R = np.zeros((n, m))
     for i in range(n):
@@ -64,8 +64,8 @@ QR_Decomposition(a)
 ```
 
 ## Output
+<img width="1917" height="855" alt="image" src="https://github.com/user-attachments/assets/02a8e999-f999-44de-a5dd-c1fab638d5c6" />
 
-<img width="1908" height="922" alt="image" src="https://github.com/user-attachments/assets/5677258e-fa76-4f37-872d-197312e1cc92" />
 
 
 
